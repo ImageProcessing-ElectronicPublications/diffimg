@@ -84,7 +84,7 @@ INCLUDEPATH += \
     $$PWD/src/formats
 
 INCLUDEPATH += /usr/include/qwt
-LIBS += -lqwt
+LIBS += -lqwt-qt5
 
 RESOURCES += $$PWD/res/$${TARGET}.qrc
 
@@ -98,6 +98,13 @@ TRANSLATIONS += $$PWD/lang/$${TARGET}_zh.ts # Chinese
 TRANSLATIONS += $$PWD/lang/$${TARGET}_ro.ts # Romanian
 TRANSLATIONS += $$PWD/lang/$${TARGET}_de.ts # German
 TRANSLATIONS += $$PWD/lang/$${TARGET}_ru.ts # Russian
+
+# build dir
+UI_DIR =      ./build
+MOC_DIR =     ./build
+RCC_DIR =     ./build
+OBJECTS_DIR = ./build
+mytarget.commands += $${QMAKE_MKDIR} ./build
 
 macx:ICON = res/$${TARGET}.icns
 macx:QMAKE_INFO_PLIST =  build/Info.plist
