@@ -6,3 +6,5 @@ You want to help ? You can proposed you as translator on transifex.com (DiffImg 
 - http://sourceforge.net/p/diffimg/discussion/ for general feedbacks
 
 You can also help me by correcting my brief help page (I'm sure you've noticed that English is not my mother tongue! :)) Contact me xbee at xbee dot net
+
+For test see: https://github.com/ImageProcessing-ElectronicPublications/diffimg-images-test (collection images)
